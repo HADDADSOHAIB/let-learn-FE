@@ -12,6 +12,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import EmojiObjectsOutlinedIcon from '@material-ui/icons/EmojiObjectsOutlined';
+import { Link } from 'react-router-dom';
 import useStyles from './Navbar.styles';
 
 export default function Navbar() {
@@ -101,7 +103,12 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            LET LEARN
+            <Link to="/">
+              <EmojiObjectsOutlinedIcon className={classes.logo} />
+            </Link>
+            <Link to="/">
+              LET LEARN
+            </Link>
           </Typography>
           <div className={classes.grow} />
           <div className={classes.search}>

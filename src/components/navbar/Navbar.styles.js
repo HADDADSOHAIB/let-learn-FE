@@ -7,7 +7,12 @@ const useStyles = makeStyles(theme => ({
   title: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
-      display: 'block',
+      display: 'flex',
+      alignItems: 'center',
+      '& a': {
+        color: '#eee',
+        textDecoration: 'none',
+      },
     },
   },
   search: {
@@ -58,6 +63,9 @@ const useStyles = makeStyles(theme => ({
       display: 'none',
     },
   },
+  logo: {
+    marginRight: '5px',
+  }
 }));
 
 export default useStyles;
