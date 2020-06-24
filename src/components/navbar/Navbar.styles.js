@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
   },
   logo: {
     marginRight: '5px',
-  }
+  },
 }));
 
 export default useStyles;
