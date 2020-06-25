@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Navbar from '../navbar/Navbar';
-import Signup from '../../pages/Signup';
+import Signup from '../../pages/signup/Signup';
 import Flash from '../flash/Flash';
 
 function App() {
